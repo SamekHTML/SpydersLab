@@ -1,0 +1,244 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* CSS variables */
+:root{
+    --navbar-height:59px;
+}
+/* navbar suru */
+.navbar{
+    display:flex;
+    align-items: center;
+    position:relative;
+    position: sticky;
+    top: 0px;
+}
+.navbar::before{
+    content: "";
+    background-color: black;
+    position:absolute;
+    top: 0px;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:0.4;
+}
+/* list styling */
+.navbar ul{
+    display:flex;
+}
+.navbar ul li{
+    list-style: none;
+    font-size:27px;
+}
+.navbar ul li a{
+    display:block;
+    text-decoration:none;
+    padding:8px 23px;
+    border-radius:30px;
+    color:white;
+    font-family: 'Bree Serif', serif;
+}
+.navbar ul li a:hover{
+    color:black;
+    background-color: white;
+}
+/* image styling */
+.logo{
+    margin: 3px 15px;
+}
+.logo img{
+    cursor: pointer;
+    height:75px;
+    /* border:2px solid white; */
+    border-radius: 100%;
+    margin: 3px 2px;
+    /* filter: invert(100%); */
+}
+/* sakyo navbar */
+/* welcome wala part suru */
+#home{
+    display:flex;
+    flex-direction: column;
+    padding:3px 100px;
+    height:460px;
+    justify-content: center;
+align-items: center;
+}
+#home::before{
+    content:"";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background:url(image/background.jpg)no-repeat center center/cover;
+    height: 85%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.91;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size:16px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+/* services suru */
+#services{
+    display: flex;
+}
+#services img{
+    height: 130px;
+    margin: auto;
+    display:block;
+}
+#services .box{
+    border:2px solid #e74c4c;
+    border-radius:20px;
+    margin:15px 7px;
+    padding: 24px 30px;
+    height:240px;
+    background-color:rgb(202 201 201);
+}
+.box h2{
+    font-family: 'Bree Serif', serif;
+}
+.box p{
+    font-family: 'Bree Serif', serif;
+
+}
+/* services sakyo */
+/* utility classes */
+.h-primary{
+    font-size: 45px;
+    font-family: 'Bree Serif', serif;
+}
+.btn{
+    border-radius:10px;
+ justify-content: center;
+ padding: 5px 5px;
+ cursor: pointer;
+ background-color:rgba(252, 84, 84, 0.925);
+ border:2px solid rgb(255, 220, 220);
+ font-size: 16px;
+ color: white;
+ transition-property: all;
+ transition-duration: 2s;
+ font-family: 'Baloo Bhai 2', cursive;
+ margin-bottom: 150px;
+}
+.btn:hover{
+transform: scale(1.1);
+box-shadow: 2px 2px 20px;
+}
+.button{
+    border-radius:10px;
+   margin-left:515px ;
+    padding: 2px 7px;
+    cursor: pointer;
+    background-color:rgba(252, 84, 84, 0.925);
+    border:2px solid rgb(255, 220, 220);
+    font-size: 16px;
+    color: white;
+    transition-property: all;
+    transition-duration: 2s;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.button:hover{
+box-shadow: 2px 2px 20px;
+}
+.button1{
+    border-radius:10px;
+    padding: 2px 7px;
+    cursor: pointer;
+    background-color:rgba(252, 84, 84, 0.925);
+    border:2px solid rgb(255, 220, 220);
+    font-size: 16px;
+    color: white;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.button1:hover{
+    box-shadow: 2px 2px 20px;
+}
+.h-secondary{
+    font-size: 20px;
+}
+.center{
+    text-align: center;
+}
+/* welcome wala part sakyo */
+/* client suru  */
+#client-section{
+height:343px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background:url(image/bg.jpg) no-repeat center center/cover;
+    background-position: center;
+   background-attachment: fixed;
+    width:100%;
+    height: 54%;
+    z-index: -1;
+    opacity: 0.6;
+    }
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height:100px;
+}
+.client-item{
+    padding: 10px;
+    margin:50px 1px;
+}
+/* client sakyo */
+/* contact us suru */
+#contact-section{
+    position:relative;
+}
+#contact-section::before{
+    content: "";
+    position:absolute;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.9;
+    background:url(image/contact.jpg) no-repeat  center/cover;
+}
+#contact-box{
+    display:flex;
+    justify-content: right;
+    align-items: right;
+   padding-bottom: 100px;
+}
+#contact-box input,
+#contact-box textarea{
+    width:90%;
+    padding:2.5px;
+   border: 2px solid rgb(255, 93, 65);
+   border-radius: 5px;
+}
+.form-group{
+    font-family: 'Baloo Bhai 2', cursive;
+}
+/* contact us sakyo */
+/* footer suru */
+.footer{
+    background-color:rgb(101 95 95);
+    color:white;
+    padding:10px 24px;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 17px;
+}
